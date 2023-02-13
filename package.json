@@ -1,0 +1,25 @@
+{
+  "name": "template-express-pg-typeorm",
+  "version": "1.0.0",
+  "description": "A ts starter project for Express.js with PostgreSQL and TypeORM on FL0",
+  "private": false,
+  "scripts": {
+    "start:dev": "nodemon -r dotenv/config --watch src src/index.ts",
+    "start": "ts-node src/index.ts",
+    "build": "npx tsc --outDir build/"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.9.0",
+    "typeorm": "^0.3.12"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.13.0",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
